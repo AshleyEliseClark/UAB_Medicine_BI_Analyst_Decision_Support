@@ -15,11 +15,4 @@ Simulate BI deliverables created at UAB Medicine to demonstrate structured BI wo
 - DAX for calculations
 - Power BI for dashboards
 
-UAB_BI_DecisionSupport/
-├── data/                # Dummy CSVs (charges, OR, HVC, ED, infusion, etc.)
-├── sql/                 # Snowflake schema + queries
-├── python_etl/          # Python ETL + forecasting
-├── power_query/         # Power Query M scripts
-├── dax_measures/        # DAX measures
-├── dashboards/          # Power BI pbix files + screenshots
-└── README.md
+
