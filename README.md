@@ -14,19 +14,12 @@ The schema follows a **star design** with Calendar, Department, Service Line, Pr
 
 
 Built a full-stack pipeline aligned to Medallion Architecture (Bronze → Silver → Gold) and CAP/INFORMS framework.
-
 Designed PostgreSQL schema for UAB operations (Charges, OR, HVC, Inpatient Days, Infusion, ED, Specialty Pharmacy).
-
 Developed SQL scripts and views for data profiling, KPI rollups, and executive summary aggregation.
-
 Connected Power BI to Postgres schema (uab_ops) for clean Silver/Gold data layers.
-
 Modeled relational schemas (Charges, OR, HVC, Inpatient Days, Infusion, ED Visits, Specialty Pharmacy).
-
 Designed Power Query ETL flows for cleaning, normalizing, and joining 3 years of synthetic UAB-style data (2022–2025; Specialty Pharmacy 2023–2025).
-
 Implemented DAX measures for KPIs (LOS, readmits, OR utilization, payer mix, specialty drug ROI).
-
 Delivered two interactive Power BI dashboards:
 
 - **Daily Operations:** Executive Summary, Charges, OR, HVC, Inpatient Days, Infusion, ED Visits
