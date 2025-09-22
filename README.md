@@ -55,13 +55,13 @@ Folder Structure
 UAB_BI_Dashboard/
 ├── data/                     # Synthetic datasets (2022–2025; SP 2023–2025)
 ├── sql/                      # PostgreSQL schema + queries
-│   ├── 00_create_schema.sql
-│   ├── 01_load_data.sql
-│   ├── 02_profile_counts.sql
-│   ├── 03_payer_mix.sql
-│   ├── 04_readmit_rate.sql
-│   ├── 05_views.sql
-│   └── 06_views_exec_summary.sql
+│   ├── 00_create_schema.sql      # Create tables, constraints, and relationships
+│   ├── 01_load_data.sql          # Bulk COPY to load raw CSVs (Bronze layer ingestion)
+│   ├── 02_profile_counts.sql     # Row counts & QA checks after data load
+│   ├── 03_payer_mix.sql          # Exploratory payer mix query (before Silver views)
+│   ├── 04_readmit_rate.sql       # Exploratory readmission rate query (before Silver views)
+│   ├── 05_views.sql              # Silver layer business-ready views (exec_summary, dept_summary, ED, SP, payer)
+│   └── 06_views_exec_summary.sql # Prototype/alternate exec summary rollup
 ├── reports/                  # Power BI reports (.pbix)
 ├── dax_measures/             # All DAX measures
 ├── scripts/                  # Python scripts (governance + ML)
