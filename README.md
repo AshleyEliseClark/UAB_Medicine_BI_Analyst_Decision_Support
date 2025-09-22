@@ -24,7 +24,7 @@ Extended project with Data Governance (quality checks, lineage, RLS) and Machine
 
 ---
 
-## 🎯 Key Business Questions
+## Key Business Questions
 
 ### Daily Operations
 - How are charges and payer mix trending across departments?
@@ -52,7 +52,7 @@ UAB_BI_Dashboard/
 
 ---
 
-## 🏗 Data Architecture & Governance
+## Data Architecture & Governance
 
 ### Medallion Approach
 - **Bronze (Raw):** CSVs loaded from `/data`
@@ -67,7 +67,7 @@ UAB_BI_Dashboard/
 
 ---
 
-## 🤖 Machine Learning (Python in Codespaces)
+## Machine Learning (Python in Codespaces)
 
 `scripts/` includes production-ready Python scripts runnable in VS Code or GitHub Codespaces:
 
