@@ -22,17 +22,6 @@ Delivered two interactive Power BI dashboards:
 
 Extended project with Data Governance (quality checks, lineage, RLS) and Machine Learning (readmission prediction, ED visit forecasting, clustering of prescriber patterns) using Python.
 
-
-Folder Structure
-UAB_BI_Dashboard/
-├── data/                     # Synthetic datasets (2022–2025; SP 2023–2025)
-├── reports/                  # Power BI reports (.pbix)
-├── dax_measures/             # All DAX measures
-├── scripts/                  # Python scripts (governance + ML)
-├── docs/                     # ERD, architecture, CAP framework, governance notes
-├── dashboards/               # Screenshots of all dashboard pages
-├── requirements.txt          # Python dependencies
-└── README.md
 ---
 
 ## 🎯 Key Business Questions
@@ -49,6 +38,17 @@ UAB_BI_Dashboard/
 - How does performance vary by service line (Gastro, Hem/Onc, CF, Rheum, Neuro, Derm, Pulm, Cardio, Transplant)?
 - Which prescribers contribute most to patient volume and ROI?
 - Are there seasonal patterns or payer differences affecting cost and access?
+
+Folder Structure
+UAB_BI_Dashboard/
+├── data/                     # Synthetic datasets (2022–2025; SP 2023–2025)
+├── reports/                  # Power BI reports (.pbix)
+├── dax_measures/             # All DAX measures
+├── scripts/                  # Python scripts (governance + ML)
+├── docs/                     # ERD, architecture, CAP framework, governance notes
+├── dashboards/               # Screenshots of all dashboard pages
+├── requirements.txt          # Python dependencies
+└── README.md
 
 ---
 
