@@ -1,5 +1,7 @@
 ```
 # 🏥 UAB Medicine – Daily Operations & Specialty Pharmacy Analytics
+
+📊 [View ERD](docs/ERD.png)
 ---
 
 ## 📄 Project Summary
