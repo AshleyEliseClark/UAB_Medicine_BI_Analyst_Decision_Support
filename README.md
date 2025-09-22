@@ -4,14 +4,24 @@
 
 ## 📄 Project Summary
 
-**Tools:** Power BI (Power Query + DAX), SQL, Python (Codespaces/VS Code), GitHub  
-**Role:** Data Visualization / BI Analyst with Data Engineering & Data Science tasks
+## 🗂 Data Model / ERD
+The schema follows a **star design** with Calendar, Department, Service Line, Prescriber, and Payer as dimensions. Fact tables include Charges, OR, HVC, Inpatient Days, Infusion, ED Visits, and Specialty Pharmacy.  
+
+**Tools:**PostgreSQL, Power BI (Power Query + DAX), SQL, Python (Codespaces/VS Code), GitHub, dbdiagram.io   
+**Role:** BI Analyst with Data Engineering & Data Science tasks
+
 
 Built a full-stack pipeline aligned to Medallion Architecture (Bronze → Silver → Gold) and CAP/INFORMS framework.
 
+Designed PostgreSQL schema for UAB operations (Charges, OR, HVC, Inpatient Days, Infusion, ED, Specialty Pharmacy).
+
+Developed SQL scripts and views for data profiling, KPI rollups, and executive summary aggregation.
+
+Connected Power BI to Postgres schema (uab_ops) for clean Silver/Gold data layers.
+
 Modeled relational schemas (Charges, OR, HVC, Inpatient Days, Infusion, ED Visits, Specialty Pharmacy).
 
-Designed Power Query ETL flows for cleaning, normalizing, and joining 4 years of synthetic UAB-style data (2022–2025; Specialty Pharmacy 2023–2025).
+Designed Power Query ETL flows for cleaning, normalizing, and joining 3 years of synthetic UAB-style data (2022–2025; Specialty Pharmacy 2023–2025).
 
 Implemented DAX measures for KPIs (LOS, readmits, OR utilization, payer mix, specialty drug ROI).
 
@@ -42,6 +52,12 @@ Extended project with Data Governance (quality checks, lineage, RLS) and Machine
 Folder Structure
 UAB_BI_Dashboard/
 ├── data/                     # Synthetic datasets (2022–2025; SP 2023–2025)
+├── sql/                      # PostgreSQL schema + queries
+│   ├── 00_create_schema.sql
+│   ├── 01_profile_counts.sql
+│   ├── 02_payer_mix.sql
+│   ├── 03_readmit_rate.sql
+│   └── views_exec_summary.sql
 ├── reports/                  # Power BI reports (.pbix)
 ├── dax_measures/             # All DAX measures
 ├── scripts/                  # Python scripts (governance + ML)
@@ -55,7 +71,7 @@ UAB_BI_Dashboard/
 ## Data Architecture & Governance
 
 ### Medallion Approach
-- **Bronze (Raw):** CSVs loaded from `/data`
+- **Bronze (Raw):** CSVs ingested into PostgreSQL (uab_ops schema) and stored in /data
 - **Silver (Cleansed):** Power Query transformations (payer normalization, OR duration, ED admits flag, specialty drug mapping)
 - **Gold (KPIs):** DAX measures for LOS, readmits, OR utilization, specialty ROI
 
@@ -68,13 +84,12 @@ UAB_BI_Dashboard/
 ---
 
 ## Machine Learning (Python in Codespaces)
-
-`scripts/` includes production-ready Python scripts runnable in VS Code or GitHub Codespaces:
-
+- Models pull cleaned features directly from PostgreSQL views before training in Python
 - `data_quality_checks.py` → QA report of missing values, outliers, duplicates
 - `readmission_model.py` → Logistic Regression & Random Forest predicting readmission risk from LOS, acuity
 - `ed_forecast.py` → Prophet/ARIMA forecasting ED arrivals for next 6 months
 - `specialty_clusters.py` → Clustering prescribers/patients by drug utilization
+
 
 ```
 
