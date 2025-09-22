@@ -56,10 +56,12 @@ UAB_BI_Dashboard/
 ├── data/                     # Synthetic datasets (2022–2025; SP 2023–2025)
 ├── sql/                      # PostgreSQL schema + queries
 │   ├── 00_create_schema.sql
-│   ├── 01_profile_counts.sql
-│   ├── 02_payer_mix.sql
-│   ├── 03_readmit_rate.sql
-│   └── views_exec_summary.sql
+│   ├── 01_load_data.sql
+│   ├── 02_profile_counts.sql
+│   ├── 03_payer_mix.sql
+│   ├── 04_readmit_rate.sql
+│   ├── 05_views.sql
+│   └── 06_views_exec_summary.sql
 ├── reports/                  # Power BI reports (.pbix)
 ├── dax_measures/             # All DAX measures
 ├── scripts/                  # Python scripts (governance + ML)
