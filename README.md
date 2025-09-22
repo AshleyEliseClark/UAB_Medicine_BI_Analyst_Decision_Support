@@ -1,7 +1,5 @@
+```
 # 🏥 UAB Medicine – Daily Operations & Specialty Pharmacy Analytics
-
-End-to-end analytics project simulating a Decision Support / BI Analyst environment at a large academic medical center. Covers data architecture, Power Query transformations, governance, predictive modeling in Python, and Power BI dashboards for hospital operations, finance, and specialty pharmacy.
-
 ---
 
 ## 📄 Project Summary
@@ -24,7 +22,6 @@ Delivered two interactive Power BI dashboards:
 
 Extended project with Data Governance (quality checks, lineage, RLS) and Machine Learning (readmission prediction, ED visit forecasting, clustering of prescriber patterns) using Python.
 
-```
 
 Folder Structure
 UAB_BI_Dashboard/
@@ -36,8 +33,6 @@ UAB_BI_Dashboard/
 ├── dashboards/               # Screenshots of all dashboard pages
 ├── requirements.txt          # Python dependencies
 └── README.md
-```
-
 ---
 
 ## 🎯 Key Business Questions
@@ -81,5 +76,5 @@ UAB_BI_Dashboard/
 - `ed_forecast.py` → Prophet/ARIMA forecasting ED arrivals for next 6 months
 - `specialty_clusters.py` → Clustering prescribers/patients by drug utilization
 
-
+```
 
