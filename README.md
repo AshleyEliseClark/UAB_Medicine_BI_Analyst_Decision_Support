@@ -8,7 +8,6 @@
 
 ## 🗂 Data Model / ERD
 The schema follows a **star design** with Calendar, Department, Service Line, Prescriber, and Payer as dimensions. Fact tables include Charges, OR, HVC, Inpatient Days, Infusion, ED Visits, and Specialty Pharmacy.  
-📊 View ERD
 
 **Tools:**PostgreSQL, Power BI (Power Query + DAX), SQL, Python (Codespaces/VS Code), GitHub, dbdiagram.io   
 **Role:** BI Analyst with Data Engineering & Data Science tasks
