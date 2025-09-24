@@ -55,8 +55,19 @@ UAB_BI_Dashboard/
 │   ├── 04_readmit_rate.sql       # Exploratory readmission rate query (before Silver views)
 │   ├── 05_views.sql              # Silver layer business-ready views (exec_summary, dept_summary, ED, SP, payer)
 │   └── 06_views_exec_summary.sql # Prototype/alternate exec summary rollup
+│
+├── powerqueries/             # NEW – Power Query M-code for Silver transformations
+│   ├── Calendar_silver.m
+│   ├── Charges_silver.m
+│   ├── InpatientDays_silver.m
+│   ├── EDVisits_silver.m
+│   ├── HVC_silver.m
+│   ├── OperatingRoom_silver.m
+│   ├── Infusion_silver.m
+│   └── SpecialtyPharmacy_silver.m
+│
 ├── reports/                  # Power BI reports (.pbix)
-├── dax_measures/             # All DAX measures
+├── dax_measures/             # All DAX measures KPI mesures for Gold layer
 ├── scripts/                  # Python scripts (governance + ML)
 ├── docs/                     # ERD, architecture, CAP framework, governance notes
 ├── dashboards/               # Screenshots of all dashboard pages
