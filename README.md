@@ -56,7 +56,7 @@ UAB_BI_Dashboard/
 │   ├── 05_views.sql              # Silver layer business-ready views (exec_summary, dept_summary, ED, SP, payer)
 │   └── 06_views_exec_summary.sql # Prototype/alternate exec summary rollup
 │
-├── powerqueries/             # NEW – Power Query M-code for Silver transformations
+├── powerqueries/             # Power Query M-code for Silver transformations
 │   ├── Calendar_silver.m
 │   ├── Charges_silver.m
 │   ├── InpatientDays_silver.m
