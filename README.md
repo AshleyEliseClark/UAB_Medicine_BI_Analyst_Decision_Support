@@ -66,10 +66,10 @@ UAB_BI_Dashboard/
 │   ├── Infusion_silver.m
 │   └── SpecialtyPharmacy_silver.m
 │
-├── reports/                  # Power BI reports (.pbix)
+├── reports/                  # CAP framework, governance notes
 ├── dax_measures/             # All DAX measures KPI mesures for Gold layer
 ├── scripts/                  # Python scripts (governance + ML)
-├── docs/                     # ERD, architecture, CAP framework, governance notes
+├── modeling/                     # ERD, architecture
 ├── dashboards/               # Screenshots of all dashboard pages
 ├── requirements.txt          # Python dependencies
 └── README.md
